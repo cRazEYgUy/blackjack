@@ -15,6 +15,9 @@
 		96678D2715D5864F000C3B8B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96678D2615D5864F000C3B8B /* AppDelegate.m */; };
 		96678D2A15D5864F000C3B8B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96678D2915D5864F000C3B8B /* ViewController.m */; };
 		96678D2D15D58650000C3B8B /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96678D2B15D58650000C3B8B /* ViewController.xib */; };
+		96678D3C15D5CBF0000C3B8B /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 96678D3B15D5CBF0000C3B8B /* Card.m */; };
+		96678D3F15D5CCBD000C3B8B /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 96678D3E15D5CCBD000C3B8B /* Deck.m */; };
+		96678D4215D5E8D7000C3B8B /* Hand.m in Sources */ = {isa = PBXBuildFile; fileRef = 96678D4115D5E8D7000C3B8B /* Hand.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,12 @@
 		96678D2815D5864F000C3B8B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		96678D2915D5864F000C3B8B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		96678D2C15D58650000C3B8B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		96678D3A15D5CBF0000C3B8B /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		96678D3B15D5CBF0000C3B8B /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		96678D3D15D5CCBD000C3B8B /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
+		96678D3E15D5CCBD000C3B8B /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
+		96678D4015D5E8D7000C3B8B /* Hand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hand.h; sourceTree = "<group>"; };
+		96678D4115D5E8D7000C3B8B /* Hand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hand.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +90,12 @@
 				96678D2615D5864F000C3B8B /* AppDelegate.m */,
 				96678D2815D5864F000C3B8B /* ViewController.h */,
 				96678D2915D5864F000C3B8B /* ViewController.m */,
+				96678D3A15D5CBF0000C3B8B /* Card.h */,
+				96678D3B15D5CBF0000C3B8B /* Card.m */,
+				96678D3D15D5CCBD000C3B8B /* Deck.h */,
+				96678D3E15D5CCBD000C3B8B /* Deck.m */,
+				96678D4015D5E8D7000C3B8B /* Hand.h */,
+				96678D4115D5E8D7000C3B8B /* Hand.m */,
 				96678D2B15D58650000C3B8B /* ViewController.xib */,
 				96678D1D15D5864F000C3B8B /* Supporting Files */,
 			);
@@ -164,6 +179,9 @@
 				96678D2315D5864F000C3B8B /* main.m in Sources */,
 				96678D2715D5864F000C3B8B /* AppDelegate.m in Sources */,
 				96678D2A15D5864F000C3B8B /* ViewController.m in Sources */,
+				96678D3C15D5CBF0000C3B8B /* Card.m in Sources */,
+				96678D3F15D5CCBD000C3B8B /* Deck.m in Sources */,
+				96678D4215D5E8D7000C3B8B /* Hand.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

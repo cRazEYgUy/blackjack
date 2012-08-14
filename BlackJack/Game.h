@@ -15,6 +15,9 @@
 @property (strong) Hand *dealerHand;
 @property (strong) NSString *outcome;
 
+- (IBAction)shorAlert:(id)sender;
+
+
 -(void)hit;
 -(void)stand;
 -(void)dealerTurn;

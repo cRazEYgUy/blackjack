@@ -15,6 +15,4 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *showPlayerHand;
 
-- (IBAction)newGame:(id)sender;
-
 @end

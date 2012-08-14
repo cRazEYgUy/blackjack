@@ -14,6 +14,8 @@
 @implementation Game
 {
     Deck* newDeck;
+    Game *currentGame;
+
 }
 
 @synthesize playerHand;
@@ -75,10 +77,37 @@
         self.outcome = @"It's a tie!";
     }
     NSLog(@"%@", self.outcome);
+    self.showAlert;
     //Trigger UI Alert to show outcome
 }
 
 
+-(IBAction)showAlert{
+    NSString *message = [NSString stringWithFormat: @"%@", self.outcome];
+    
+    
+    UIAlertView *alertView = [[UIAlertView alloc]
+                              
+                              initWithTitle:@"End of the Round!"
+                              message:message
+                              delegate:nil
+                              cancelButtonTitle:@"OK"
+                              otherButtonTitles:@"Play Again!", nil];
+    
+    
+    [alertView show];
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    NSString *title = [alertView buttonTitleAtIndex:buttonIndex];
+    
+    if([title isEqualToString:@"Play Again!"])
+    {
+        currentGame = [[Game alloc] init];
+        
+    }
+}
 
 
 

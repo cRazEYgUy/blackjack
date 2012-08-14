@@ -25,6 +25,8 @@
         }
     }
     cardsInDeck = [self shuffleDeck];
+    NSLog(@"%@",cardsInDeck);
+    
 }
 
 -(NSMutableArray*) shuffleDeck{

@@ -22,5 +22,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *showDealerCards;
 @property (weak, nonatomic) IBOutlet UILabel *showPlayerCards;
 @property (weak, nonatomic) IBOutlet UIButton *dealButton;
+@property (weak, nonatomic) IBOutlet UIButton *hitMeButton;
+@property (weak, nonatomic) IBOutlet UIButton *standButton;
 
 @end

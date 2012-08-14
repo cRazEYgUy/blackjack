@@ -39,7 +39,7 @@
 					<object class="IBUIButton" id="656905985">
 						<reference key="NSNextResponder" ref="774585933"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{20, 187}, {130, 51}}</string>
+						<string key="NSFrame">{{20, 141}, {130, 51}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="1069041176"/>
@@ -59,17 +59,17 @@
 							<int key="NSColorSpace">3</int>
 							<bytes key="NSWhite">MC41AA</bytes>
 						</object>
-						<object class="NSCustomResource" key="IBUINormalBackgroundImage" id="385906669">
+						<object class="NSCustomResource" key="IBUINormalBackgroundImage" id="1024058623">
 							<string key="NSClassName">NSImage</string>
 							<string key="NSResourceName">blackbuttonlarge.png</string>
 						</object>
-						<object class="IBUIFontDescription" key="IBUIFontDescription" id="973944621">
+						<object class="IBUIFontDescription" key="IBUIFontDescription" id="771165577">
 							<string key="name">STHeitiTC-Medium</string>
 							<string key="family">Heiti TC</string>
 							<int key="traits">2</int>
 							<double key="pointSize">24</double>
 						</object>
-						<object class="NSFont" key="IBUIFont" id="282984299">
+						<object class="NSFont" key="IBUIFont" id="928484688">
 							<string key="NSName">STHeitiTC-Medium</string>
 							<double key="NSSize">24</double>
 							<int key="NSfFlags">16</int>
@@ -78,7 +78,7 @@
 					<object class="IBUIButton" id="1069041176">
 						<reference key="NSNextResponder" ref="774585933"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{170, 188}, {130, 50}}</string>
+						<string key="NSFrame">{{170, 142}, {130, 50}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="745686632"/>
@@ -92,9 +92,9 @@
 						<reference key="IBUIHighlightedTitleColor" ref="178354032"/>
 						<reference key="IBUINormalTitleColor" ref="178354032"/>
 						<reference key="IBUINormalTitleShadowColor" ref="889772054"/>
-						<reference key="IBUINormalBackgroundImage" ref="385906669"/>
-						<reference key="IBUIFontDescription" ref="973944621"/>
-						<reference key="IBUIFont" ref="282984299"/>
+						<reference key="IBUINormalBackgroundImage" ref="1024058623"/>
+						<reference key="IBUIFontDescription" ref="771165577"/>
+						<reference key="IBUIFont" ref="928484688"/>
 					</object>
 					<object class="IBUILabel" id="117779563">
 						<reference key="NSNextResponder" ref="774585933"/>
@@ -117,13 +117,13 @@
 						<nil key="IBUIHighlightedColor"/>
 						<int key="IBUIBaselineAdjustment">0</int>
 						<float key="IBUIMinimumFontSize">10</float>
-						<object class="IBUIFontDescription" key="IBUIFontDescription" id="600569476">
+						<object class="IBUIFontDescription" key="IBUIFontDescription" id="1065047568">
 							<string key="name">STHeitiTC-Light</string>
 							<string key="family">Heiti TC</string>
 							<int key="traits">0</int>
 							<double key="pointSize">17</double>
 						</object>
-						<object class="NSFont" key="IBUIFont" id="503874291">
+						<object class="NSFont" key="IBUIFont" id="377583645">
 							<string key="NSName">STHeitiTC-Light</string>
 							<double key="NSSize">17</double>
 							<int key="NSfFlags">16</int>
@@ -135,7 +135,7 @@
 						<string key="NSFrame">{{116, 421}, {88, 21}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="319244292"/>
+						<reference key="NSNextKeyView" ref="82802559"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
@@ -147,16 +147,16 @@
 						<nil key="IBUIHighlightedColor"/>
 						<int key="IBUIBaselineAdjustment">0</int>
 						<float key="IBUIMinimumFontSize">10</float>
-						<reference key="IBUIFontDescription" ref="600569476"/>
-						<reference key="IBUIFont" ref="503874291"/>
+						<reference key="IBUIFontDescription" ref="1065047568"/>
+						<reference key="IBUIFont" ref="377583645"/>
 					</object>
 					<object class="IBUIButton" id="1036357587">
 						<reference key="NSNextResponder" ref="774585933"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{20, 86}, {280, 89}}</string>
+						<string key="NSFrame">{{20, 122}, {280, 89}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="65034500"/>
+						<reference key="NSNextKeyView" ref="972053658"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -166,7 +166,7 @@
 						<reference key="IBUIHighlightedTitleColor" ref="178354032"/>
 						<reference key="IBUINormalTitleColor" ref="178354032"/>
 						<reference key="IBUINormalTitleShadowColor" ref="889772054"/>
-						<reference key="IBUINormalBackgroundImage" ref="385906669"/>
+						<reference key="IBUINormalBackgroundImage" ref="1024058623"/>
 						<object class="IBUIFontDescription" key="IBUIFontDescription">
 							<string key="name">SnellRoundhand-Bold</string>
 							<string key="family">Snell Roundhand</string>
@@ -197,8 +197,8 @@
 						<nil key="IBUIHighlightedColor"/>
 						<int key="IBUIBaselineAdjustment">0</int>
 						<float key="IBUIMinimumFontSize">10</float>
-						<reference key="IBUIFontDescription" ref="600569476"/>
-						<reference key="IBUIFont" ref="503874291"/>
+						<reference key="IBUIFontDescription" ref="1065047568"/>
+						<reference key="IBUIFont" ref="377583645"/>
 					</object>
 					<object class="IBUILabel" id="703653231">
 						<reference key="NSNextResponder" ref="774585933"/>
@@ -206,7 +206,7 @@
 						<string key="NSFrame">{{168, 294}, {113, 21}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="452192134"/>
+						<reference key="NSNextKeyView" ref="192901125"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
@@ -218,16 +218,16 @@
 						<nil key="IBUIHighlightedColor"/>
 						<int key="IBUIBaselineAdjustment">0</int>
 						<float key="IBUIMinimumFontSize">10</float>
-						<reference key="IBUIFontDescription" ref="600569476"/>
-						<reference key="IBUIFont" ref="503874291"/>
+						<reference key="IBUIFontDescription" ref="1065047568"/>
+						<reference key="IBUIFont" ref="377583645"/>
 					</object>
-					<object class="IBUILabel" id="427691172">
+					<object class="IBUILabel" id="307027484">
 						<reference key="NSNextResponder" ref="774585933"/>
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{168, 323}, {143, 77}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="593207375"/>
+						<reference key="NSNextKeyView" ref="269950116"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
@@ -240,25 +240,25 @@
 						<int key="IBUIBaselineAdjustment">0</int>
 						<float key="IBUIMinimumFontSize">10</float>
 						<int key="IBUINumberOfLines">5</int>
-						<object class="IBUIFontDescription" key="IBUIFontDescription" id="209210049">
+						<object class="IBUIFontDescription" key="IBUIFontDescription" id="822185679">
 							<string key="name">STHeitiTC-Light</string>
 							<string key="family">Heiti TC</string>
 							<int key="traits">0</int>
 							<double key="pointSize">11</double>
 						</object>
-						<object class="NSFont" key="IBUIFont" id="908842581">
+						<object class="NSFont" key="IBUIFont" id="371525637">
 							<string key="NSName">STHeitiTC-Light</string>
 							<double key="NSSize">11</double>
 							<int key="NSfFlags">16</int>
 						</object>
 					</object>
-					<object class="IBUILabel" id="452192134">
+					<object class="IBUILabel" id="192901125">
 						<reference key="NSNextResponder" ref="774585933"/>
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{27, 323}, {143, 77}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="427691172"/>
+						<reference key="NSNextKeyView" ref="307027484"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
@@ -271,10 +271,10 @@
 						<int key="IBUIBaselineAdjustment">0</int>
 						<float key="IBUIMinimumFontSize">10</float>
 						<int key="IBUINumberOfLines">5</int>
-						<reference key="IBUIFontDescription" ref="209210049"/>
-						<reference key="IBUIFont" ref="908842581"/>
+						<reference key="IBUIFontDescription" ref="822185679"/>
+						<reference key="IBUIFont" ref="371525637"/>
 					</object>
-					<object class="IBUILabel" id="593207375">
+					<object class="IBUILabel" id="269950116">
 						<reference key="NSNextResponder" ref="774585933"/>
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{27, 419}, {104, 21}}</string>
@@ -292,19 +292,19 @@
 						<nil key="IBUIHighlightedColor"/>
 						<int key="IBUIBaselineAdjustment">0</int>
 						<float key="IBUIMinimumFontSize">10</float>
-						<object class="IBUIFontDescription" key="IBUIFontDescription" id="497584740">
+						<object class="IBUIFontDescription" key="IBUIFontDescription" id="550840894">
 							<string key="name">STHeitiTC-Light</string>
 							<string key="family">Heiti TC</string>
 							<int key="traits">0</int>
 							<double key="pointSize">13</double>
 						</object>
-						<object class="NSFont" key="IBUIFont" id="175758312">
+						<object class="NSFont" key="IBUIFont" id="875313149">
 							<string key="NSName">STHeitiTC-Light</string>
 							<double key="NSSize">13</double>
 							<int key="NSfFlags">16</int>
 						</object>
 					</object>
-					<object class="IBUILabel" id="319244292">
+					<object class="IBUILabel" id="82802559">
 						<reference key="NSNextResponder" ref="774585933"/>
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{168, 421}, {104, 21}}</string>
@@ -322,10 +322,10 @@
 						<nil key="IBUIHighlightedColor"/>
 						<int key="IBUIBaselineAdjustment">0</int>
 						<float key="IBUIMinimumFontSize">10</float>
-						<reference key="IBUIFontDescription" ref="497584740"/>
-						<reference key="IBUIFont" ref="175758312"/>
+						<reference key="IBUIFontDescription" ref="550840894"/>
+						<reference key="IBUIFont" ref="875313149"/>
 					</object>
-					<object class="IBUILabel" id="65034500">
+					<object class="IBUILabel" id="972053658">
 						<reference key="NSNextResponder" ref="774585933"/>
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{45, 15}, {249, 78}}</string>
@@ -424,7 +424,7 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">showDealerCards</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="452192134"/>
+						<reference key="destination" ref="192901125"/>
 					</object>
 					<int key="connectionID">27</int>
 				</object>
@@ -432,7 +432,7 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">showPlayerCards</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="427691172"/>
+						<reference key="destination" ref="307027484"/>
 					</object>
 					<int key="connectionID">28</int>
 				</object>
@@ -443,6 +443,22 @@
 						<reference key="destination" ref="1036357587"/>
 					</object>
 					<int key="connectionID">32</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">hitMeButton</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="656905985"/>
+					</object>
+					<int key="connectionID">35</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">standButton</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="1069041176"/>
+					</object>
+					<int key="connectionID">36</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
@@ -495,18 +511,18 @@
 						<int key="objectID">6</int>
 						<reference key="object" ref="774585933"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="593207375"/>
+							<reference ref="269950116"/>
 							<reference ref="117779563"/>
-							<reference ref="319244292"/>
+							<reference ref="82802559"/>
 							<reference ref="8323774"/>
-							<reference ref="427691172"/>
+							<reference ref="307027484"/>
 							<reference ref="703653231"/>
 							<reference ref="745686632"/>
-							<reference ref="452192134"/>
+							<reference ref="192901125"/>
+							<reference ref="972053658"/>
 							<reference ref="1036357587"/>
-							<reference ref="1069041176"/>
 							<reference ref="656905985"/>
-							<reference ref="65034500"/>
+							<reference ref="1069041176"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -552,27 +568,27 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">25</int>
-						<reference key="object" ref="427691172"/>
+						<reference key="object" ref="307027484"/>
 						<reference key="parent" ref="774585933"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">26</int>
-						<reference key="object" ref="452192134"/>
+						<reference key="object" ref="192901125"/>
 						<reference key="parent" ref="774585933"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">29</int>
-						<reference key="object" ref="593207375"/>
+						<reference key="object" ref="269950116"/>
 						<reference key="parent" ref="774585933"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">30</int>
-						<reference key="object" ref="319244292"/>
+						<reference key="object" ref="82802559"/>
 						<reference key="parent" ref="774585933"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">31</int>
-						<reference key="object" ref="65034500"/>
+						<reference key="object" ref="972053658"/>
 						<reference key="parent" ref="774585933"/>
 					</object>
 				</array>
@@ -602,7 +618,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">32</int>
+			<int key="maxID">36</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -635,14 +651,20 @@
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="dealButton">UIButton</string>
+						<string key="hitMeButton">UIButton</string>
 						<string key="showDealerCards">UILabel</string>
 						<string key="showDealerHand">UILabel</string>
 						<string key="showPlayerCards">UILabel</string>
 						<string key="showPlayerHand">UILabel</string>
+						<string key="standButton">UIButton</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
 						<object class="IBToOneOutletInfo" key="dealButton">
 							<string key="name">dealButton</string>
+							<string key="candidateClassName">UIButton</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="hitMeButton">
+							<string key="name">hitMeButton</string>
 							<string key="candidateClassName">UIButton</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="showDealerCards">
@@ -660,6 +682,10 @@
 						<object class="IBToOneOutletInfo" key="showPlayerHand">
 							<string key="name">showPlayerHand</string>
 							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="standButton">
+							<string key="name">standButton</string>
+							<string key="candidateClassName">UIButton</string>
 						</object>
 					</dictionary>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">

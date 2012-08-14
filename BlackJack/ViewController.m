@@ -20,6 +20,8 @@
 @synthesize showDealerCards;
 @synthesize showPlayerCards;
 @synthesize dealButton;
+@synthesize hitMeButton;
+@synthesize standButton;
 @synthesize showDealerHand;
 @synthesize showPlayerHand;
 
@@ -49,6 +51,7 @@
 - (IBAction)hit:(id)sender {
     [currentGame hit];
     [self showPlayerCardsAndScore];
+
     
      if ([currentGame.playerHand bust]) {
          [self showDealerCardsAndScore];
@@ -59,11 +62,20 @@
 -(IBAction)stand:(id)sender{
     [currentGame stand];
     [self showDealerCardsAndScore];
+
     
     [self showAlert];
     
 }
 
+-(void)viewDidLoad{
+    if (!currentGame) {
+        hitMeButton.hidden = YES;
+    }
+    if (!currentGame) {
+        standButton.hidden = YES;
+    }
+}
 
 - (void)viewDidUnload {
     [self setShowDealerHand:nil];
@@ -71,7 +83,8 @@
     [self setShowDealerCards:nil];
     [self setShowPlayerCards:nil];
     [self setDealButton:nil];
-    
+    [self setHitMeButton:nil];
+    [self setStandButton:nil];
     [super viewDidUnload];
 }
 
@@ -85,6 +98,9 @@
     [self makeGame];
     if (currentGame){
         dealButton.hidden = YES;
+        hitMeButton.hidden = NO;
+        standButton.hidden = NO;
+    
     }
 }
 

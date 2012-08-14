@@ -7,28 +7,60 @@
 //
 
 #import "ViewController.h"
+#import "Game.h"
+#import "Hand.h"
 
 @interface ViewController ()
 
 @end
 
-@implementation ViewController
+@implementation ViewController{
+    Game *currentGame;
+}
+@synthesize showDealerHand;
+@synthesize showPlayerHand;
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
+
+//-(id)init{
+//    NSLog(@"initializing...");
+//    self = [super init];
+//    if (self) {
+//
+//    }
+//    return self;
+//}
+
+
+
+
+
+
+- (IBAction)hit:(id)sender {
+    [currentGame hit];
+    showPlayerHand.text = [[NSString alloc] initWithFormat: @"%d", [currentGame.playerHand getValueFromHand]];
+}
+-(IBAction)stand:(id)sender{
+    [currentGame stand];
+    showDealerHand.text = [[NSString alloc] initWithFormat: @"%d", [currentGame.dealerHand getValueFromHand]];
 }
 
-- (void)viewDidUnload
-{
+
+- (void)viewDidUnload {
+    [self setShowDealerHand:nil];
+    [self setShowPlayerHand:nil];
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
 }
+
+
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
-
+- (IBAction)newGame:(id)sender {
+    currentGame = [[Game alloc] init];
+    showDealerHand.text = [[NSString alloc] initWithFormat: @"%d", [currentGame.dealerHand getValueFromHand]];
+    showPlayerHand.text = [[NSString alloc] initWithFormat: @"%d", [currentGame.playerHand getValueFromHand]];
+}
 @end

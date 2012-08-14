@@ -9,5 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+- (IBAction)hit:(id)sender;
+-(IBAction)stand:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel *showDealerHand;
+
+@property (weak, nonatomic) IBOutlet UILabel *showPlayerHand;
+
+- (IBAction)newGame:(id)sender;
 
 @end

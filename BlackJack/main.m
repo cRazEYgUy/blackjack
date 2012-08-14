@@ -10,14 +10,17 @@
 
 #import "AppDelegate.h"
 #import "Deck.h"
+#import "Game.h"
 
 int main(int argc, char *argv[])
 {
     @autoreleasepool {
-        
-        Deck* trialDeck = [Deck new];
-        NSLog (@"%@", [trialDeck generateTheDeck]);
-    
+//        
+//        
+//        Deck* trialDeck = [Deck new];
+//        [trialDeck generateTheDeck];
+//        NSLog (@"%@", [trialDeck cardsInDeck]);
+//    
         
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
 

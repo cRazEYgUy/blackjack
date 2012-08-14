@@ -7,9 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Card.h"
 
 @interface Hand : NSObject
 @property (strong) NSMutableArray *cardsInHand;
 
--(int) getValueOfHand;
+- (BOOL) bust;
+-(int) getValueFromHand;
+-(id) initWithCardOne:(Card*)c1 withCardTwo:(Card*)c2;
 @end

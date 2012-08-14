@@ -14,7 +14,7 @@
 
 
 
--(NSMutableArray*) generateTheDeck {
+-(void) generateTheDeck {
     cardsInDeck = [NSMutableArray new];
     for (NSString* suit in[Card suits]) {
         for (NSNumber *value in [Card values] ) {
@@ -25,14 +25,21 @@
         }
     }
     cardsInDeck = [self shuffleDeck];
-    return cardsInDeck;
 }
 
 -(NSMutableArray*) shuffleDeck{
     for (int i = 0; i<52; i++) {
-        [cardsInDeck exchangeObjectAtIndex:i withObjectAtIndex: arc4random()%52];
+        [cardsInDeck exchangeObjectAtIndex:i withObjectAtIndex: i + arc4random()%(52 -i)];
     }
     return cardsInDeck;
+}
+
+
+-(Card*)drawCard{
+    
+    Card *card = self.cardsInDeck.lastObject;
+    [self.cardsInDeck removeLastObject];
+    return card;
 }
 
 

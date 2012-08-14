@@ -11,6 +11,7 @@
 @interface Card : NSObject
 @property (strong) NSString *suit;
 @property int value;
+@property int pointsValue;
 
 +(NSArray*)suits;
 +(NSArray*)values;

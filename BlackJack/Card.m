@@ -11,7 +11,7 @@
 @implementation Card
 @synthesize suit;
 @synthesize value;
-
+@synthesize pointsValue;
 
 
 +(NSArray*)suits
@@ -28,6 +28,18 @@
         values = [values arrayByAddingObject: [NSNumber numberWithInt: i]];
     }
     return values;
+}
+
+
+-(int)pointsValue{
+    if (self.value >= 10) {
+        self.pointsValue = 10;
+    } else if (self.value == 1){
+        self.pointsValue = 11;
+    } else {
+        self.pointsValue = self.value;
+    }
+    return pointsValue;
 }
 
 

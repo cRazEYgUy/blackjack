@@ -18,6 +18,7 @@
 		96678D3C15D5CBF0000C3B8B /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 96678D3B15D5CBF0000C3B8B /* Card.m */; };
 		96678D3F15D5CCBD000C3B8B /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 96678D3E15D5CCBD000C3B8B /* Deck.m */; };
 		96678D4215D5E8D7000C3B8B /* Hand.m in Sources */ = {isa = PBXBuildFile; fileRef = 96678D4115D5E8D7000C3B8B /* Hand.m */; };
+		96678DA915D99E34000C3B8B /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 96678DA815D99E34000C3B8B /* Game.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,8 @@
 		96678D3E15D5CCBD000C3B8B /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
 		96678D4015D5E8D7000C3B8B /* Hand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hand.h; sourceTree = "<group>"; };
 		96678D4115D5E8D7000C3B8B /* Hand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hand.m; sourceTree = "<group>"; };
+		96678DA715D99E34000C3B8B /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		96678DA815D99E34000C3B8B /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,10 +95,12 @@
 				96678D2915D5864F000C3B8B /* ViewController.m */,
 				96678D3A15D5CBF0000C3B8B /* Card.h */,
 				96678D3B15D5CBF0000C3B8B /* Card.m */,
-				96678D3D15D5CCBD000C3B8B /* Deck.h */,
 				96678D3E15D5CCBD000C3B8B /* Deck.m */,
+				96678D3D15D5CCBD000C3B8B /* Deck.h */,
 				96678D4015D5E8D7000C3B8B /* Hand.h */,
 				96678D4115D5E8D7000C3B8B /* Hand.m */,
+				96678DA715D99E34000C3B8B /* Game.h */,
+				96678DA815D99E34000C3B8B /* Game.m */,
 				96678D2B15D58650000C3B8B /* ViewController.xib */,
 				96678D1D15D5864F000C3B8B /* Supporting Files */,
 			);
@@ -182,6 +187,7 @@
 				96678D3C15D5CBF0000C3B8B /* Card.m in Sources */,
 				96678D3F15D5CCBD000C3B8B /* Deck.m in Sources */,
 				96678D4215D5E8D7000C3B8B /* Hand.m in Sources */,
+				96678DA915D99E34000C3B8B /* Game.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +303,7 @@
 				96678D3215D58650000C3B8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

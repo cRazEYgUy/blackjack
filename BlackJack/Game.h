@@ -15,10 +15,11 @@
 @property (strong) Hand *dealerHand;
 @property (strong) NSString *outcome;
 
-- (IBAction)shorAlert:(id)sender;
+//- (IBAction)showAlert:(id)sender;
 
 
 -(void)hit;
 -(void)stand;
 -(void)dealerTurn;
+-(NSString*)endOfGame;
 @end

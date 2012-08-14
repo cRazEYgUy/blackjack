@@ -19,6 +19,7 @@
 		96678D3F15D5CCBD000C3B8B /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 96678D3E15D5CCBD000C3B8B /* Deck.m */; };
 		96678D4215D5E8D7000C3B8B /* Hand.m in Sources */ = {isa = PBXBuildFile; fileRef = 96678D4115D5E8D7000C3B8B /* Hand.m */; };
 		96678DA915D99E34000C3B8B /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 96678DA815D99E34000C3B8B /* Game.m */; };
+		96678DC115DAFEFF000C3B8B /* blackbuttonlarge.png in Resources */ = {isa = PBXBuildFile; fileRef = 96678DC015DAFEFF000C3B8B /* blackbuttonlarge.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		96678D4115D5E8D7000C3B8B /* Hand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hand.m; sourceTree = "<group>"; };
 		96678DA715D99E34000C3B8B /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
 		96678DA815D99E34000C3B8B /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
+		96678DC015DAFEFF000C3B8B /* blackbuttonlarge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blackbuttonlarge.png; path = ../../../blackbuttonlarge.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 		96678D1D15D5864F000C3B8B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				96678DC015DAFEFF000C3B8B /* blackbuttonlarge.png */,
 				96678D1E15D5864F000C3B8B /* BlackJack-Info.plist */,
 				96678D1F15D5864F000C3B8B /* InfoPlist.strings */,
 				96678D2215D5864F000C3B8B /* main.m */,
@@ -171,6 +174,7 @@
 			files = (
 				96678D2115D5864F000C3B8B /* InfoPlist.strings in Resources */,
 				96678D2D15D58650000C3B8B /* ViewController.xib in Resources */,
+				96678DC115DAFEFF000C3B8B /* blackbuttonlarge.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

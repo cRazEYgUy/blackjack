@@ -41,6 +41,16 @@
         return sumOfHand;
 }
 
+-(NSString*) getDescriptionOfCards {
+    int counter = 0;
+    NSMutableArray *descriptions = [[NSMutableArray alloc] init];
+    for (Card* currentCard in self.cardsInHand){
+        [descriptions addObject: [currentCard description]];
+        counter ++;
+    }
+    return [descriptions componentsJoinedByString: @"\n"];
+}
+
 
 -(int)countAces {
     int count = 0;

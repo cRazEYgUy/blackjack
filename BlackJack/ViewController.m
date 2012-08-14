@@ -17,6 +17,9 @@
 @implementation ViewController{
     Game *currentGame;
 }
+@synthesize showDealerCards;
+@synthesize showPlayerCards;
+@synthesize dealButton;
 @synthesize showDealerHand;
 @synthesize showPlayerHand;
 
@@ -32,23 +35,43 @@
 //}
 
 
+- (void) showPlayerCardsAndScore {
+    showPlayerHand.text = [[NSString alloc] initWithFormat: @"%d", [currentGame.playerHand getValueFromHand]];
+    showPlayerCards.text = [currentGame.playerHand getDescriptionOfCards];
+}
 
-
+- (void) showDealerCardsAndScore {
+    showDealerHand.text = [[NSString alloc] initWithFormat: @"%d", [currentGame.dealerHand getValueFromHand]];
+    showDealerCards.text = [currentGame.dealerHand getDescriptionOfCards];
+}
 
 
 - (IBAction)hit:(id)sender {
     [currentGame hit];
-    showPlayerHand.text = [[NSString alloc] initWithFormat: @"%d", [currentGame.playerHand getValueFromHand]];
+    [self showPlayerCardsAndScore];
+    
+     if ([currentGame.playerHand bust]) {
+         [self showDealerCardsAndScore];
+         [self showAlert];
+     }
 }
+
 -(IBAction)stand:(id)sender{
     [currentGame stand];
-    showDealerHand.text = [[NSString alloc] initWithFormat: @"%d", [currentGame.dealerHand getValueFromHand]];
+    [self showDealerCardsAndScore];
+    
+    [self showAlert];
+    
 }
 
 
 - (void)viewDidUnload {
     [self setShowDealerHand:nil];
     [self setShowPlayerHand:nil];
+    [self setShowDealerCards:nil];
+    [self setShowPlayerCards:nil];
+    [self setDealButton:nil];
+    
     [super viewDidUnload];
 }
 
@@ -58,38 +81,48 @@
 {
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
-- (IBAction)newGame:(id)sender {
-    currentGame = [[Game alloc] init];
-    showDealerHand.text = [[NSString alloc] initWithFormat: @"%d", [currentGame.dealerHand getValueFromHand]];
-    showPlayerHand.text = [[NSString alloc] initWithFormat: @"%d", [currentGame.playerHand getValueFromHand]];
+- (IBAction)clickDeal:(id)sender {
+    [self makeGame];
+    if (currentGame){
+        dealButton.hidden = YES;
+    }
 }
-//
-//-(IBAction)showAlert{
-//    NSString *message = [NSString stringWithFormat: @"%@", self.outcome];
-//    
-//    
-//    UIAlertView *alertView = [[UIAlertView alloc]
-//                              
-//                              initWithTitle:@"End of the Round!"
-//                              message:message
-//                              delegate:nil
-//                              cancelButtonTitle:@"OK"
-//                              otherButtonTitles:@"Play Again!", nil];
-//    
-//    
-//    [alertView show];
-//}
-//
-//- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
-//{
-//    NSString *title = [alertView buttonTitleAtIndex:buttonIndex];
-//    
-//    if([title isEqualToString:@"Play Again!"])
-//    {
-//        currentGame = [[Game alloc] init];
-//        
-//    }
-//}
+
+- (void) makeGame {
+    currentGame = [[Game alloc] init];
+    [self showPlayerCardsAndScore];
+    showDealerCards.text = @"Dealer Cards Hidden";
+    showDealerHand.text = @"-";
+}
+
+-(IBAction)showAlert{
+    NSString *message = [NSString stringWithFormat: @"%@", [currentGame endOfGame]];
+
+
+    UIAlertView *alertView = [[UIAlertView alloc]
+
+                              initWithTitle:@"End of the Round!"
+                              message:message
+                              delegate:self
+                              cancelButtonTitle:nil
+                              otherButtonTitles:@"Play Again!", nil];
+
+
+    [alertView show];
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+
+    if(buttonIndex == 0)
+    {
+        [self makeGame];
+    }
+}
+
+
+
+
 
 
 @end

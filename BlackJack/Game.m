@@ -10,6 +10,7 @@
 #import "Deck.h"
 #import "Hand.h"
 #import "Card.h"
+#import "ViewController.h"
 
 @implementation Game
 {
@@ -51,6 +52,7 @@
 -(void)hit{
     Card* card = [newDeck drawCard];
     [playerHand.cardsInHand addObject: card];
+
 }
 
 -(void)stand{
@@ -58,7 +60,7 @@
 }
 
 -(void)dealerTurn{
-    while ([dealerHand getValueFromHand] < 16) {
+    while ([dealerHand getValueFromHand] <= 16) {
         Card *card = [newDeck drawCard];
         [dealerHand.cardsInHand addObject: card];
     }
@@ -67,47 +69,51 @@
 
 
 
-- (void) endOfGame {
+- (NSString*) endOfGame {
 
-    if ([playerHand bust] || ([dealerHand getValueFromHand] > [playerHand getValueFromHand])) {
+        
+    if ([playerHand bust]) {
+        self.outcome = @"Dealer wins!";   
+    } else if ([dealerHand bust]) {
+        self.outcome = @"Player wins!";
+    } else if ([dealerHand getValueFromHand] > [playerHand getValueFromHand]) {
         self.outcome = @"Dealer wins!";
-    } else if ([dealerHand bust] || ([playerHand getValueFromHand] > [dealerHand getValueFromHand]) ) {
+    } else if ([playerHand getValueFromHand] > [dealerHand getValueFromHand]) {
         self.outcome = @"Player wins!";
     } else {
         self.outcome = @"It's a tie!";
     }
-    NSLog(@"%@", self.outcome);
-    self.showAlert;
     //Trigger UI Alert to show outcome
+    return self.outcome;
+
 }
 
 
--(IBAction)showAlert{
-    NSString *message = [NSString stringWithFormat: @"%@", self.outcome];
-    
-    
-    UIAlertView *alertView = [[UIAlertView alloc]
-                              
-                              initWithTitle:@"End of the Round!"
-                              message:message
-                              delegate:nil
-                              cancelButtonTitle:@"OK"
-                              otherButtonTitles:@"Play Again!", nil];
-    
-    
-    [alertView show];
-}
-
-- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
-{
-    NSString *title = [alertView buttonTitleAtIndex:buttonIndex];
-    
-    if([title isEqualToString:@"Play Again!"])
-    {
-        currentGame = [[Game alloc] init];
-        
-    }
-}
+//-(IBAction)showAlert{
+//    NSString *message = [NSString stringWithFormat: @"%@", self.outcome];
+//    
+//    
+//    UIAlertView *alertView = [[UIAlertView alloc]
+//                              
+//                              initWithTitle:@"End of the Round!"
+//                              message:message
+//                              delegate:self
+//                              cancelButtonTitle:@"OK"
+//                              otherButtonTitles:@"Play Again!", nil];
+//    
+//    
+//    [alertView show];
+//}
+//
+//- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+//{
+//    
+//    if(buttonIndex == 1)
+//    {
+//        ViewController *newView = [ViewController new];
+//        [newView makeGame];
+//    }
+//}
 
 
 

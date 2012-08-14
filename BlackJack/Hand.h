@@ -15,4 +15,6 @@
 - (BOOL) bust;
 -(int) getValueFromHand;
 -(id) initWithCardOne:(Card*)c1 withCardTwo:(Card*)c2;
+-(NSString*) getDescriptionOfCards;
+
 @end

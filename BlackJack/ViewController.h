@@ -11,8 +11,16 @@
 @interface ViewController : UIViewController
 - (IBAction)hit:(id)sender;
 -(IBAction)stand:(id)sender;
+- (IBAction)clickDeal:(id)sender;
+- (void)makeGame;
+
 @property (weak, nonatomic) IBOutlet UILabel *showDealerHand;
 
 @property (weak, nonatomic) IBOutlet UILabel *showPlayerHand;
+
+-(IBAction)showAlert;
+@property (weak, nonatomic) IBOutlet UILabel *showDealerCards;
+@property (weak, nonatomic) IBOutlet UILabel *showPlayerCards;
+@property (weak, nonatomic) IBOutlet UIButton *dealButton;
 
 @end
